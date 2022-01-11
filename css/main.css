@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body .background {
+    background: radial-gradient(transparent 50%, black), url('../img/bg.jpg') no-repeat center center fixed;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    box-shadow: inset 0 0 500px black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    /*
+        Nope =(
+        margin-left: -25%;
+        margin-top: -25%;
+        */
+
+    /* 
+        Yep!
+        */
+    transform: translate(-50%, -50%);
+
+    /*
+        Not even necessary really. 
+        e.g. Height could be left out!
+        */
+    width: 40%;
+    height: 50%;
+    max-width: 600px;
+    padding:15px
+}
